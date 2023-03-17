@@ -1,0 +1,22 @@
+body{
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../assets/bg.jpeg");
+}
+img{
+    border-radius: 10px;
+}
+
+#log{
+    color:rgb(17, 16, 16);
+    background-color: rgb(61, 61, 229);
+    color:white;
+    font-weight: 600;
+    width:100%;
+    margin-bottom: 10px;
+}
+#log:hover{
+    background-color: black;
+    color:white;
+}

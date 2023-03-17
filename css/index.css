@@ -1,0 +1,25 @@
+body{
+    background-position:center;
+    background-repeat: no-repeat;
+    background-image: url("../assets/bgmain.jpg");
+}
+img{
+    border-radius: 10px;
+}
+div{
+    background-color: white;
+}
+.contain{
+    height: 800px;
+}
+.con{
+    color: black;
+    font-size: 30px;
+    width: 50%;
+    float: right;
+    font-family: cursive;
+}
+
+a:link{
+    text-decoration: none;  
+}

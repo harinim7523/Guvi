@@ -1,0 +1,13 @@
+body{
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../assets/bg.jpeg");
+}
+img{
+    border-radius: 10px;
+}
+table{
+    color: white;
+}
+
