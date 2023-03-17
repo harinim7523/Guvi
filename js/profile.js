@@ -6,7 +6,7 @@ $("#logout").on('click',function()
     }
     $.ajax({
         type:"POST",
-        url:"/Ajax/php/logout.php",
+        url:"/Guvi/php/logout.php",
         data:data,
         success:(response)=>
         {
@@ -15,7 +15,7 @@ $("#logout").on('click',function()
             {
                 console.log(response);
                 localStorage.removeItem("username");
-                location.href="/Ajax/login.html"
+                location.href="/Guvi/login.html"
             }
         }
     })
@@ -28,7 +28,7 @@ $(document).ready(()=>
     console.log(username);
     if(username==null)
     {
-        location.href="/Ajax/login.html";
+        location.href="/Guvi/login.html";
     }
     else{
         var dataset={
@@ -37,7 +37,7 @@ $(document).ready(()=>
         }
         $.ajax({
             type:"POST",
-            url:"/Ajax/php/profile.php",
+            url:"/Guvi/php/profile.php",
             data:dataset,
             success:(response)=>
             {
@@ -80,18 +80,18 @@ $(document).ready(()=>
     
 })
 
-function getCookie(cname) {
-    let name = cname + "=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let ca = decodedCookie.split(';');
-    for(let i = 0; i <ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
-}
+// function getCookie(cname) {
+//     let name = cname + "=";
+//     let decodedCookie = decodeURIComponent(document.cookie);
+//     let ca = decodedCookie.split(';');
+//     for(let i = 0; i <ca.length; i++) {
+//       let c = ca[i];
+//       while (c.charAt(0) == ' ') {
+//         c = c.substring(1);
+//       }
+//       if (c.indexOf(name) == 0) {
+//         return c.substring(name.length, c.length);
+//       }
+//     }
+//     return "";
+// }

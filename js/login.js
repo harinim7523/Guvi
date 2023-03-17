@@ -7,7 +7,7 @@ $("#log").on('click',function()
     };
     
     $.ajax({
-      url: '/Ajax/php/login.php',
+      url: '/Guvi/php/login.php',
       type: 'post',
       data: data,
       success:function(response){
@@ -17,7 +17,7 @@ $("#log").on('click',function()
             localStorage.setItem("username", data.username);
             alert(data.username+" Login successful");
             console.log("hel"); 
-            location.href="/Ajax/profile.html";
+            location.href="/Guvi/profile.html";
       }
     });
 })

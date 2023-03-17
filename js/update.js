@@ -8,7 +8,7 @@ $("#upd").on('click',function()
       action:$('action').val(),
     };
     $.ajax({
-      url: '/Ajax/php/update.php',
+      url: '/Guvi/php/update.php',
       type: 'post',
       data: data,
       success:function(response){
@@ -17,12 +17,12 @@ $("#upd").on('click',function()
         if(response==200)
         {
            alert(response);
-            location.href="/Ajax/profile.html";
+            location.href="/Guvi/profile.html";
 
         }
         else{
             alert("Credentials not correct or empty");
-            location.href='/Ajax/update.html';
+            location.href='/Guvi/update.html';
         }
       }
     });

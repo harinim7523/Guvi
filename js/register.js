@@ -12,13 +12,8 @@ $("#reg").on('click',function()
       action: $("#action").val(),
     };
     
-    // if(data.name==null || data.username==null || data.password==null || data.dob==null || data.phno==null)
-    // {
-    //   alert("data should not be empty");
-    // }
-
     $.ajax({
-      url: '/Ajax/php/register.php',
+      url: '/Guvi/php/register.php',
       type: 'post',
       data: data,
       success:function(response){
@@ -29,10 +24,10 @@ $("#reg").on('click',function()
             {
                 console.log(response);
                 localStorage.removeItem("username");
-                location.href="/Ajax/login.html"
+                location.href="/Guvi/login.html"
             }
             else{
-              location.href="/Ajax/register.html";
+              location.href="/Guvi/register.html";
             }
       }
      
